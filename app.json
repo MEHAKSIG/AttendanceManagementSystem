@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Attendance Management System",
+    "slug": "attendance-management-system",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mehak.attendanceapp"
+    },
+    "android": {
+      "permissions": [
+        "Permissions.LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.mehak.attendanceapp"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ff86ed31-da5c-46d5-8000-742c414342ec"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ff86ed31-da5c-46d5-8000-742c414342ec"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          },
+          "ios": {}
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
